@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#"> <img src="/static/img/logo.png" alt="" class="logo"></a>
+            <div>
+                <ul id="navbar">
+                <li><a class="{% if request.path == '/' %} active {% endif %}" href= "{% url 'home' %}">Home</a></li>
+                <li><a class="{% if request.path == '/shop/' %} active {% endif %}" href="{% url 'shop' %}">Shop</a></li>
+                <li><a class="{% if request.path == '/about/' %} active {% endif %}" href="{% url 'about' %}">About</a></li>
+                <li><a class="{% if request.path == '/contact/' %} active {% endif %}" href="{% url 'contact' %}">Contact</a></li>
+                <li id="lg-bag"><a class="{% if request.path == '/cart/' %} active {% endif %}" href="{% url 'cart' %}"><i class="far fa-shopping-bag"></i></a></li>
+                <li ><a class="{% if request.path == '/login/' %} active {% endif %}" href="{% url 'login' %}">Login</a></li>
+                <li ><a class="{% if request.path == '/register/' %} active {% endif %}" href="{% url 'register' %}">Register</a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent "></i>
+            </div>
+        </section>

@@ -1,0 +1,137 @@
+{%extends 'base.html' %}
+{% block content %}
+          
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="/static/img/products/f1.jpg" id="MainImg" width="100%" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="/static/img/products/f1.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/static/img/products/f2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/static/img/products/f3.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/static/img/products/f4.jpg" width="100%" alt="" class="small-img">
+                    </div>
+            </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h6>Home / T-Shirt</h6>
+                <h4>Men's Fashion T-Shirt</h4>
+                <h2>$139.00</h2>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">Small</option>
+                    <option value="">Meduim</option>
+                    <option value="">Large</option>
+                    <option value="">XL</option>
+                </select>
+                <input type="number" value="1"  name="" id="">
+                <button class="normal">Add to Cart</button>
+                <h4>Product Details</h4>
+                <span>
+                The Glidan Ultra Cotton T-Shirt is made from a substantial 6.0 oz. per 
+                sq. yd. fabric constructed from 100% cotton, this classic fit preshunk
+                jersey knit provides unmatched comfort with each wear. Featuring a taped neck
+                and shoulder, and a seamless double-needle collar, and available ina range of colors,
+                it offers it all in the ultimate head-turning package.  
+                </span>
+            </div>
+
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="/static/img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="/static/img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="/static/img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="/static/img/products/f8.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Cartoon Astronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$78</h4>
+                    </div>
+                    <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+
+        </section>
+           
+        <script>
+            var MainImg=document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImg.src=smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src=smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src=smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src=smallimg[3].src;
+            }
+        </script>
+        {% endblock %}
+      

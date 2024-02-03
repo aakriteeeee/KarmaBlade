@@ -1,0 +1,37 @@
+{%extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                {% for n in ProductData %}
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img src='{% static n.product_image.url %}' alt="">
+                    <div class="des">
+                        <span>KarmaBlade</span>
+                        <h5>{{n.product_name}}</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>{{n.product_price}}</h4>
+                    </div>
+                    <a href="#"> <i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+               {% endfor %}
+            </div>
+
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+        </section>
+
+        {% endblock %}

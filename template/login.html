@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Add this section to your existing HTML file -->
+
+<!-- Add this section to your existing HTML file -->
+
+<section id="login" class="section-p1">
+    <div class="login-container">
+        <h2>User Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="normal">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Sign up here</a></p>
+    </div>
+</section>
+
+
+{% endblock %}
